@@ -1,0 +1,97 @@
+ID ,Name,Base Value,log (mean),SE of ln distribution,alpha,beta,Distribution type,DESCRIPTION
+1,p_n_tu_st,100%,,,,,Uniform,Proportion of patients who do NOT need further procedure after FIRE
+2,p_n_tu_cb,67%,,,,,Uniform,Proportion of patients who do NOT need further touch-up after ICE
+3,p_stroke_st,0.53%,,,2,374,Beta,Stroke_ST
+4,p_stroke_cb,0.53%,,,2,372,Beta,Stroke_ICE
+5,p_opdeath_st,0%,,,,,,Operative death ST
+6,p_opdeath_cb,0%,,,,,,Operative death ICE
+7,r_pe_st,2.10%,,,84,3920,Beta,Pericardial effussion ST
+8,r_pt_st,1.38%,,,44,3154,Beta,Pericardial tamponade ST
+9,r_pnp_st,0.00%,,,,,,Phrenic nerve palsy ST
+10,r_pe_cb,0.80%,,,25,3088,Beta,Pericardial effussion ICE 
+11,r_pt_cb,0.36%,,,7,1915,Beta,Pericardial tamponade ICE
+12,r_pnp_cb,1.67%,,,34,2007,Beta,Phrenic nerve palsy ICE
+13,recurrence_st_st_PAF,18.69%,,,37,161,Beta,AF recurrence ST short-term PAF
+14,OR_AAD_PAF,0.096831734,-2.334780508,0.309715782,,,lognormal,OR AAD PAF
+15,OR_ICE_PAF,0.370141652,-0.993869504,0.441156362,,,lognormal,OR ICE PAF
+16,recurrence_st_st_PsAF,50.00%,,,50,50,Beta,AF recurrence ST short-term PsAF
+17,OR_AAD_PsAF,0.096852035,-2.334570881,0.309687974,,,lognormal,OR AAD PsAF
+18,OR_ICE_PsAF,0.390047262,-0.941487364,0.355459515,,,lognormal,OR ICE PsAF
+19,r_PAF,60%,,,,,Uniform,Ratio of PsAF
+20,r_warfarin,44%,,,,,Uniform,Probability of warfarin use for AF
+21,hz_stroke_af,1.6,0.470003629,0.185854364,,,lognormal,Hazard ratio of stroke for AF vs. NSR
+22,hz_death_stroke,7.4,2.00148,0.06843469,,,lognormal,Hazard ratio of death for patients with stroke
+23,hz_death_poststroke,2.3,0.832909123,0.076557294,,,lognormal,Hazard ratio of death for post stroke
+24,hz_death_ICH,8.1,,,,,Triangular,Hazard ratio of death for patients with ICH
+25,hz_death_postICH,1.64,,,,,Triangular,Hazard ratio of death for post ICH
+26,hz_death_bleeding,3.5,,,,,Triangular,Hazard ratio of death for GI bleeding
+27,r_D_toxiticy,12.50%,,,,,Triangular,Rate of AAD toxicity (short-term)
+28,r_D_toxiticy_stcb,0,,,,,,Rate of AAD toxicity ST/CB-1
+29,recurrence_d_lt,28.83%,,,72,178,Beta,AF recurrence of AAD in long-term
+30,recurrence_operation_lt,3.35%,,,35,1010,Beta,AF recurrence of ST/ CB-1 in long-term
+31,p_bleeding_warfarin,1.00%,,,,,Triangular,Annual probability of GI bleeding for warfarin users
+32,p_bleeding_nonwarfarin,0.58%,,,,,Triangular,Annual probability of GI bleeding for warfarin non-users
+33,p_ICH_warfarin,0.80%,,,58,7250,Beta,Annual probability of ICH for warfarin users
+34,p_ICH_nonwarfarin,0.50%,,,46,9200,Beta,Annual probability of ICH for warfarin non-users
+35,p_D_totixity_lt,1.25%,,,,,Triangular,Annual risk of AAD toxicity (long-term)
+36,hz_mi_af,1.22,0.198850859,0.122213501,,,lognormal,Hazard Ratio of MI AF vs non AF
+37,p_mi_gp,0.17%,,,,,Constant,Annual incidence of MI among general population
+38,hz_hf_af,4.62,1.530394705,0.199053997,,,lognormal,Hazard Ratio of Heart Failure AF vs non AF
+39,p_hf_gp,0.08%,,,,,Constant,Annual incidence of Chronic heart Failure among general populaion
+40,hz_death_MI,5.84,1.764730797,0.194596804,,,lognormal,Hazard Ratio of death for MI
+41,hz_death_postMI,2.21,0.792992516,0.803711995,,,lognormal,Hazard Ratio of death for post MI
+42,p_postMI_MI,1.86%,,,,,Triangular,Annual probability of post MI to MI
+43,hz_death_HF,10.52,,,,,Triangular,Hazard Ratio of death for Heart Failure
+44,p_m,68%,,,5626,2690,Beta,Proportion of male
+45,Chards_3,0.032,,,,,Constant,Chards 3
+46,Chards_4,0.04,,,,,Constant,Chards 4
+47,Chards_5,0.067,,,,,Constant,Chards 5
+48,Chards_6,0.098,,,,,Constant,Chards 6
+49,Chards_7,0.096,,,,,Constant,Chards 7
+50,Chards_8,0.067,,,,,Constant,Chards 8
+51,Chards_9,0.152,,,,,Constant,Chards 9
+52,c_st,79800,,,,,Triangular,Price of ST procedure
+53,c_cb,84100,,,,,Triangular,Price of CB-1 procedure
+54,c_tu,7500,,,,,Triangular,Price of touch-up after unsuccessful  procedure
+55,c_pe,3500,,,,,Triangular,Cost of preicardial effussion management
+56,c_pt,815,,,,,Triangular,Cost of preicardial tamponade management
+57,c_pnp,150,,,,,Triangular,Cost of phrenic nerve palsy management
+58,c_stroke,35479.5,,,,,Triangular,Cost of non-fatal stroke management
+59,c_poststroke,3547.95,,,,,Triangular,Annual Cost of post-stroke management
+60,c_ICH,26422.35,,,,,Triangular,Cost of ICH management
+61,c_postICH,2642.235,,,,,Triangular,Annual Cost of post-ICH management
+62,c_bleeding,2488,,,,,Triangular,Cost of GI bleeding management
+63,c_d,0,,,,,Constant,Cost of death
+64,c_NSR,0,,,,,Constant,Annual cost of NSR state
+65,c_AAD,1987,,,,,Triangular,Annual cost of AAD therapy for patients with AF
+66,c_war,7427,,,,,Triangular,Annual cost of warfarin therapy
+67,c_AADtoxiticity,500,,,,,Triangular,AAD toxicity management cost:
+68,c_hf,"28,974",,,,,Triangular,Annual cost of heart failure treatment
+69,c_MI,23091,,,,,Triangular,Cost of MI management
+70,c_postMI,202,,,,,Triangular,Annual cost of post MI management
+71,u_d_NSR,0,,,,,Triangular,Decrement NSR
+72,u_d_recurrence,0.0034,,,,,Triangular,Decrement AF recurrence
+73,u_d_compli,0.0027,,,,,Triangular,Decrement Surgical complications
+74,u_d_bleeding,0.06,,,,,Triangular,Decrement GI bleeding
+75,u_d_AAD_NSF,0.0199,,,,,Triangular,Decrement for NSF given AAD
+76,u_d_AAD_AF,0.0925,,,,,Triangular,Decrement for AF given AAD:
+77,u_d_AADtoxiticity,0.0329,,,,,Triangular,Decrement for AAD toxicity:
+78,u_m_stroke,0.5,,,,,Triangular,Multiplier for a non-fatal stroke evet (year 1):
+79,u_m_poststroke,0.63,,,,,Triangular,Multiplier for post-stroke (year 2+):
+80,u_m_ICH,0.5,,,,,Triangular,Multiplier for a non-fatal ICH event (year 1):
+81,u_m_postICH,0.63,,,,,Triangular,Multiplier for post-ICH (year 2+):
+82,u_d_hf,0.147,,,,,Triangular,Decrement  for  heart Failure
+83,u_mi,0.44,,,,,Triangular,Utility of MI
+84,u_d_postMI,0.127,,,,,Triangular,Decrement for post MI
+85,d_cost,3.50%,,,,,Triangular,Discount rate of cost
+86,d_qaly,3.50%,,,,,Triangular,Discount rate of QALY
+87,rr_anticog,2.78,,,,,Constant,RR Stroke nonanticoagulation vs anticoagulation 
+88,p_AAD,48%,,,,,Uniform,Percentage of AAD usage when AF in long-term
+89,c_MI_low,11505,,,,,,Cost of MI management_low
+90,c_MI_high,34514,,,,,,Cost of MI management_high
+91,c_postMI_low,101,,,,,,Annual cost of post MI management_low
+92,c_postMI_high,303,,,,,,Annual cost of post MI management_high
+93,recurrence_cb_st_PAF,0.3831,,,,,lognormal,AF recurrence ICE short-term PAF
+94,recurrence_cb_st_PsAF,0.7194,,,,,lognormal,AF recurrence ICE short-term PsAF
+,,,,,,,,
+,,,,,,,,
